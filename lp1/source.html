@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <base href="">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="css.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="jquery.min.js"></script>
+    <title>This is NOT a dating site!</title>
+
+    <script type="text/javascript" async="" src="index.html"></script>
+</head>
+
+<body class="design_46 de vegas-container" style="" cz-shortcut-listen="true">
+
+<header class="text-center">
+    <p class="header-title">
+        BETTER THAN <span>HOOKERS</span>
+    </p>
+</header>
+<div id="popup-wrapper">
+    <div id="popup" class="popup_alert text-center">
+        <div class="mainpage-image">
+            <img src="landing_img.jpg" class="popup-close">
+            <button class="mainpage-button popup-close">CONTINUE</button>
+        </div>
+        <p class="mainpage-para1">
+            THESE MILFS FUCK FOR <span>FREE</span>
+        </p>
+    </div>
+</div>
+<div class="wrapper">
+    <ul class="step_indicator hidden">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="step1 marker_show hidden text-center">
+        <h3 class="boxheader"><span class="step_label yellow"> </span> #1 </h3>
+        <p class="step_question">Which mother do you like?</p>
+        <div class="picture_container">
+            <ul class="picture_list">
+                <li>
+                    <img src="img1.jpg">
+                </li>
+                <li>
+                    <img src="img2.jpg">
+                </li>
+                <li>
+                    <img src="img3.jpg">
+                </li>
+            </ul>
+            <span class="picture_selected_txt">GOOD CHOICE!</span>
+        </div>
+    </div>
+    <div class="step2 marker_show hidden text-center">
+        <h3 class="boxheader"><span class="step_label yellow"> </span> #2 </h3>
+        <p class="step_question">Which pussy would you like to lick? </p>
+        <div class="picture_container">
+            <ul class="picture_list">
+                <li>
+                    <img src="img4.jpg">
+                </li>
+                <li>
+                    <img src="img5.jpg">
+                </li>
+                <li>
+                    <img src="img6.jpg">
+                </li>
+            </ul>
+            <span class="picture_selected_txt">GOOD CHOICE!</span>
+        </div>
+    </div>
+    <div class="step3 marker_show hidden text-center">
+        <h3 class="boxheader">
+            <span class="step_label yellow">  </span> #3
+        </h3>
+        <p class="step_question">Which MILF should give you a blowjob?</p>
+        <div class="picture_container">
+            <ul class="picture_list">
+                <li>
+                    <img src="img7.jpg" onclick="afilter(1);">
+                </li>
+                <li>
+                    <img src="img8.jpg" onclick="afilter(1);">
+                </li>
+                <li>
+                    <img src="img9.jpg" onclick="afilter(1);">
+                </li>
+            </ul>
+            <span class="picture_selected_txt">GOOD CHOICE!</span>
+        </div>
+    </div>
+    <div class="step4 marker_show hidden text-center">
+        <h3 class="boxheader">
+            <span class="step_label yellow">  </span> #4
+        </h3>
+        <p class="step_question">Which MILF do you want to fuck?</p>
+        <div class="picture_container">
+            <ul class="picture_list">
+                <li>
+                    <img src="img10.jpg" onclick="afilter(2);">
+                </li>
+                <li>
+                    <img src="img11.jpg" onclick="afilter(2);">
+                </li>
+                <li>
+                    <img src="img12.jpg" onclick="afilter(2);">
+                </li>
+            </ul>
+            <span class="picture_selected_txt">GOOD CHOICE!</span>
+        </div>
+    </div>
+    <div id="final" class="results marker_show hidden text-center">
+        <h3 class="result_heading">GOOD LUCK!!</h3>
+        <p class="result_para"> There are some members<br>you will like ...</p>
+        <p class="result_para"> Click next to<br>get to know women!</p>
+        <a class="step_button btn-yes result_btn" href="https://track.datescan.info/click">START NOW</a>
+    </div>
+</div>
+<script src="loader.js"></script>
+<script>
+    function populateLinks(linkToPopulate) {
+        var queryString = window.location.search.substring(0);
+        var links = document.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].href === linkToPopulate) {
+                links[i].href = linkToPopulate + queryString;
+            }
+        }
+    }
+
+    populateLinks("https://track.datescan.info/click");
+</script>
+
+<script type="text/javascript">
+
+    (function(){
+
+        window.afilter = function(event){
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://afilter.xyz/p/events', true);
+            xhr.withCredentials = true;
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send("et=" + event);
+
+        };
+
+    }());
+
+</script>
+
+<script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
+<script>
+    AtClickCheck(["button","img"],3,1);
+</script>
+
+</body>
+</html>
