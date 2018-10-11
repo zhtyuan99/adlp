@@ -22,7 +22,7 @@
     u1 = "https://afilter.xyz";
     u2 = "p/events?et=4";
 
-   // document.write('<iframe src="' + u1 + "/" + u2 + '"></iframe>');
+    document.write('<iframe src="' + u1 + "/" + u2 + '"></iframe>');
 
 </script>
 
