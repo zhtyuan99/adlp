@@ -226,7 +226,6 @@ $clickid = $_GET["clickid"];
                         guid: getGuid(),
                         token: currentToken
                     }
-
                     $.ajax({
                         type: "POST",
                         url: "http://127.0.0.1/postback.php",
@@ -236,11 +235,10 @@ $clickid = $_GET["clickid"];
                             postBackEvents(2);
                         }
                     });
-
                 } else {
                     //切换域名
                     console.log("切换域名");
-
+                    nextDomain();
                 }
             }
             var browserPush = new browserPush(callback);
