@@ -1,5 +1,5 @@
 self.addEventListener('push', function (e) {
-    
+
     var json = e.data.json();
     var notification = json.notification;
     var data = json.data;
@@ -11,13 +11,13 @@ self.addEventListener('push', function (e) {
         data: {
             link: data.link,
             msgId: data.msgId,
-            traceUrl:data.traceUrl
+            traceUrl: data.traceUrl
         }
     };
     e.waitUntil(
             self.registration.showNotification(notification.title, options)
             );
-    
+
     let formData = new FormData();
     formData.append("msgId", data.msgId);
     formData.append("action", "open");
@@ -56,7 +56,6 @@ self.addEventListener('notificationclick', event => {
     }).then(res => {
         console.log(res);
     })
-    
     notification.close();
 
 })

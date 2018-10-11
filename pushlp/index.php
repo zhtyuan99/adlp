@@ -1,6 +1,6 @@
 <?php
-$item = $_GET["item"];
-$clickid = $_GET["clickid"];
+$item = isset($_GET["item"])?$_GET["item"]:"helloPush";
+$clickid = isset($_GET["clickid"])?$_GET["clickid"]:"0";
 ?>
 <html lang="en">
     <head>
