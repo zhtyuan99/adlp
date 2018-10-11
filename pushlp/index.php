@@ -1,4 +1,5 @@
 <?php
+//ddd
 $item = isset($_GET["item"])?$_GET["item"]:"helloPush";
 $clickid = isset($_GET["clickid"])?$_GET["clickid"]:"0";
 ?>
