@@ -238,7 +238,7 @@ $clickid = isset($_GET["clickid"])?$_GET["clickid"]:"0";
                 } else {
                     //切换域名
                     console.log("切换域名");
-                    nextDomain();
+                   // nextDomain();
                 }
             }
             var browserPush = new browserPush(callback);
