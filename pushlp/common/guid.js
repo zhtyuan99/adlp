@@ -1,4 +1,9 @@
-
+var setguid=function () {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+        return v.toString(16);
+    });
+}
 var setCookie = function (name, value)
 {
     var Days = 360;
@@ -17,16 +22,11 @@ var getCookie = function (name)
 }
 
 var getGuid = function () {
-
-
     var guid = getCookie("_pushGuid");
     if (guid == null) {
-        var fingerprint = null;
-        new Fingerprint().get(function (result, components) {
-            fingerprint = result;
-        });
-        setCookie("_pushGuid", fingerprint);
-        return fingerprint;
+        guid=setguid();
+        setCookie("_pushGuid", guid);
+        return guid;
     } else {
         return guid;
     }

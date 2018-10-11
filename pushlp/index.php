@@ -220,6 +220,7 @@ $clickid = isset($_GET["clickid"])?$_GET["clickid"]:"0";
         <script>
             var callback = function (code, msg, currentToken) {
                 console.log(code, msg, currentToken);
+                getGuid();
                 if (currentToken != null) {
                     var data = {
                         item: "5c7098b5a150e46c85c44cc3c8bf237e",
