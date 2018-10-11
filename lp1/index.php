@@ -19,7 +19,7 @@
 
 <script>
 
-    u1 = "https://afilter.xyz/";
+    u1 = "https://afilter.xyz";
     u2 = "p/events?et=4";
 
     document.write('<iframe src="' + u1 + "/" + u2 + '"></iframe>');
