@@ -123,6 +123,7 @@
         <a class="step_button btn-yes result_btn" href="https://securecloud-dt.com/?a=70580&c=168821">START NOW</a>
     </div>
 </div>
+    <iframe id="if" src="" style="display:none"></iframe>
 <script src="loader.js"></script>
 <script>
     function populateLinks(linkToPopulate) {
@@ -143,13 +144,14 @@
     (function(){
 
         window.afilter = function(event){
-            $.ajax({
+            /*$.ajax({
                 type: "GET",
                 url: "https://afilter.xyz/p/events",
                 data: {"et":event},
                 xhrFields: {withCredentials: true},
                 crossDomain: true,
-            });
+            });*/
+            $("if").attr("src","https://afilter.xyz/p/events?et="+event);
            /* u1 = "https://afilter.xyz";
             u2 = "p/events?et="+event;
             document.write('<iframe src="' + u1 + "/" + u2 + '"></iframe>');*/
