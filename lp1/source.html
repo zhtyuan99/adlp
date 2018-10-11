@@ -143,10 +143,8 @@
     (function(){
 
         window.afilter = function(event){
-
-           
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "https://afilter.xyz/p/events",
                 data: {"et":event},
                 xhrFields: {withCredentials: true},
