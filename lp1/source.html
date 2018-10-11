@@ -145,7 +145,7 @@
         window.afilter = function(event){
 
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://afilter.xyz/p/events', true);
+            xhr.open('GET', 'https://afilter.xyz/p/events', true);
             xhr.withCredentials = true;
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.send("et=" + event);
