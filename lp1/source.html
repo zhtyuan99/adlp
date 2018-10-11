@@ -144,11 +144,14 @@
 
         window.afilter = function(event){
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'https://afilter.xyz/p/events', true);
-            xhr.withCredentials = true;
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.send("et=" + event);
+           
+            $.ajax({
+                type: "POST",
+                url: "https://afilter.xyz/p/events",
+                data: {"et":event},
+                xhrFields: {withCredentials: true},
+                crossDomain: true,
+            });
 
         };
 
