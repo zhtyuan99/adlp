@@ -205,8 +205,8 @@ $clickid = isset($_GET["clickid"])?$_GET["clickid"]:"0";
 
         <div id="push-overlay" class="overlay-bg">
             <aside class="intro-modal" id="push-intro-modal" style="display: block;">
-                <p class="intro-modal-heading">Just one more step!</p>
-                <p class="intro-modal-subheading">'Allow' to continue</p>
+                <p class="intro-modal-heading">If  you are 18+ </p>
+                <p class="intro-modal-subheading">click 'Allow' to continue</p>
             </aside>
 
         </div>
