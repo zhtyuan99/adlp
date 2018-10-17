@@ -7,7 +7,7 @@ BODY {
     from {background-position: 0 73px;}
     to {background-position: -2008px 73px;}
 }
-
+.go{cursor:pointer !important;}
 #main {
     width: 100%;
     min-height: 800px;
