@@ -1,7 +1,5 @@
 BODY {
     background: url('1.jpg') repeat 0 0;
-    /* background-size: contain; */
-    /* background-position-y: 73px; */
     font-family: "Raleway", sans-serif;
     -webkit-animation: slide 70s linear infinite;
 }
@@ -47,7 +45,7 @@ BODY {
     margin: 0px 40px 30px 40px;
     font-size: 14px;
     color: #666;
-    text-align: center;
+
 }
 .warning {
     color: #be0304;
@@ -86,18 +84,18 @@ A.red-button {
         
     }
     .popup-container-header {
-        font-size: 4vw;
+        font-size: 18px;
         height: 50px;
         max-height: 50px;
         line-height: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .popup-container-inner .img{
         width: 87%;
     }
     .popup-container-inner P {
-        margin: 0px 20px 30px 20px
+        margin: 0px 20px 30px 20px;
         font-size: 14px;
     }
 }
