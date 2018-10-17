@@ -51,7 +51,7 @@ BODY {
     color: #be0304;
     font-weight: bold;
 }
-span.green-button, A.green-button, A.red-button {
+.green-button, .green-button, .red-button {
     cursor: pointer;
     cursor: hand;
     display: inline-block;
@@ -65,7 +65,7 @@ span.green-button, A.green-button, A.red-button {
     background: linear-gradient(#4fa915,#028d00);
     margin-bottom: 10px;
 }
-A.red-button {
+.red-button {
     background: linear-gradient(#ff3f2a,#d83d3b);
 }
 
@@ -104,6 +104,6 @@ A.red-button {
         font-size: 7vw;
     }
     #popup-container {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
