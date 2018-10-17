@@ -45,7 +45,7 @@ BODY {
 }
 .popup-container-inner P {
     margin: 0px 40px 30px 40px;
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
     text-align: center;
 }
@@ -98,7 +98,7 @@ A.red-button {
     }
     .popup-container-inner P {
         margin: 0px 20px 30px 20px
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 414px) {
