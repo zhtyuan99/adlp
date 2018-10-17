@@ -1,0 +1,111 @@
+BODY {
+    background: url('1.jpg') repeat 0 0;
+    /* background-size: contain; */
+    /* background-position-y: 73px; */
+    font-family: "Raleway", sans-serif;
+    -webkit-animation: slide 70s linear infinite;
+}
+@-webkit-keyframes slide {
+    from {background-position: 0 73px;}
+    to {background-position: -2008px 73px;}
+}
+
+#main {
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    margin-top: 40px;
+}
+
+#popup-container {
+    width: 540px;
+    background: white;
+    margin:0 auto;
+    margin-top: 50px;
+}
+.popup-container-inner {
+    text-align: center;
+}
+.popup-container-header {
+    position:relative;
+    background: #2f78c1;
+    height: 73px;
+    line-height: 73px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.popup-container-inner .img {
+    width: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.popup-container-inner P {
+    margin: 0px 40px 30px 40px;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+}
+.warning {
+    color: #be0304;
+    font-weight: bold;
+}
+span.green-button, A.green-button, A.red-button {
+    cursor: pointer;
+    cursor: hand;
+    display: inline-block;
+    width: 65%;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(#4fa915,#028d00);
+    margin-bottom: 10px;
+}
+A.red-button {
+    background: linear-gradient(#ff3f2a,#d83d3b);
+}
+
+
+@media screen and (max-width:767px) {
+
+    #main {
+        height: auto;
+        min-height: 500px;
+        max-height:500px;
+    }
+    #popup-container {
+        width: 90%;
+        margin:0 auto;
+        margin-top: 90px;
+        
+    }
+    .popup-container-header {
+        font-size: 4vw;
+        height: 50px;
+        max-height: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .popup-container-inner .img{
+        width: 87%;
+    }
+    .popup-container-inner P {
+        margin: 0px 20px 30px 20px
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 414px) {
+    span.green-button, a.green-button, a.red-button {
+        font-size: 7vw;
+    }
+    #popup-container {
+        margin-top: 40px;
+    }
+}
