@@ -7770,6 +7770,7 @@ h1, h2, h3, h4, h5, h6 {
 .js .animate-box {
   opacity: 1;
   position: relative;
+  background: #fff url(../img/loader.gif) no-repeat 50% 50%;
 }
 
 pre {
