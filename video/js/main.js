@@ -70,7 +70,7 @@
 $(".play-btn").click(function(){
  
     $("#frame").slideDown();
-    $("#signupFrame").attr("src","")
+  
     
 })
 $("#close").click(function(){
