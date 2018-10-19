@@ -142,7 +142,7 @@
 
             <script>
                 $(function () {
-                    $("img.lazy").lazyload({effect: "fadeIn"});
+                    $("img.lazy").lazyload({effect: "fadeIn",event: 'scrollstop'});
                     $(".play-btn").click(function () {
 
                         $("#frame").slideDown();
