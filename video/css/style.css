@@ -8365,6 +8365,7 @@ a > img.fh5co-align-center {
         background: #eee;
         border-left:1px solid #ccc;
         border-right:1px solid #ccc;
+        z-index:9999;
     }
 
 @media screen and (max-width: 480px) {
@@ -8380,6 +8381,7 @@ a > img.fh5co-align-center {
         background: #eee;
         border-left:1px solid #ccc;
         border-right:1px solid #ccc;
+        z-index:9999;
     }
 }
 .ifheader{
