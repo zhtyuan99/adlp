@@ -19,7 +19,7 @@
         <!-- Salvattore -->
         <link rel="stylesheet" href="css/salvattore.css">
         <!-- Theme Style -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css?v=<?php echo time()?>">
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- FOR IE9 below -->
@@ -32,7 +32,7 @@
 
         <div id="fh5co-offcanvass">
             <a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">category <i class="icon-cross"></i> </a>
-            <h1 class="fh5co-logo"><a class="navbar-brand" href="index.html">Free Videos</a></h1>
+            <h1 class="fh5co-logo"><a class="navbar-brand" href=index.php">Free Videos</a></h1>
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -69,7 +69,7 @@
                          <?php 
                             $json= file_get_contents('list.json');
                             $list=json_decode($json,true);
-                            foreach($list as $l){?>
+                            foreach($list as $l){
                          ?>
                          
                         <div class="item">
@@ -136,7 +136,7 @@
  
             <script src="js/salvattore.min.js"></script>
             <!-- Main JS -->
-            <script src="js/main.js?v=2"></script>
+            <script src="js/main.js?v=<?php echo time()?>"></script>
 
 
 
