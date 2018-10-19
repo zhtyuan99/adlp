@@ -7755,6 +7755,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  width:100%;
 }
 
 #fh5co-board .item .fh5co-board-img {
@@ -8407,4 +8408,6 @@ a > img.fh5co-align-center {
     right:0;
     bottom:0;
 }
-/*# sourceMappingURL=style.css.map */
+#signupFrame{
+    display:none;
+}
