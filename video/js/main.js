@@ -68,7 +68,6 @@ $("#close").click(function () {
 
 $("#signup").click(function () {
     $(this).text("Loading");
-    var iframe = document.getElementById("signupFrame");
-    iframe.style.display="block";
-
+    $("#signupFrame").attr("src","https://t.cn/EzorT18");
+    $("#signupFrame").show();
 })
