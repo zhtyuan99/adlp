@@ -136,14 +136,13 @@
             <!-- jQuery -->
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.lazyload.min.js"></script>
-            <script src="js/jquery.scrollstop.min.js"></script>
             <script src="js/salvattore.min.js"></script>
             <!-- Main JS -->
             <script src="js/main.js?v=<?php echo time() ?>"></script>
 
             <script>
                 $(function () {
-                    $("img.lazy").lazyload({event: 'scrollstop'});
+                    $("img.lazy").lazyload();
                     $(".play-btn").click(function () {
 
                         $("#frame").slideDown();
