@@ -69,14 +69,6 @@ $("#close").click(function () {
 $("#signup").click(function () {
     $(this).text("Loading");
     var iframe = document.getElementById("signupFrame");
-    if (iframe.attachEvent) {
-        iframe.attachEvent("onload", function () {
-            iframe.style.display="block";
-        });
-    } else {
-        iframe.onload = function () {
-            iframe.style.display="block"; 
-        };
-    }
+    iframe.style.display="block";
 
 })
