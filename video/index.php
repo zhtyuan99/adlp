@@ -67,7 +67,7 @@
                        
                          <!--end item-->
                          <?php 
-                            $json= file_get_contents('list.json');
+                            $json= file_get_contents('list_1.json');
                             $list=json_decode($json,true);
                             foreach($list as $l){
                          ?>
