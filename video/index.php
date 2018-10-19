@@ -115,7 +115,7 @@
                 <p style="text-align: center;font-size:22px;padding:15px;margin-top:30%;line-height: 1.8;"class="text-info">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
                 <p style="text-align: center"><button class="btn btn-success" id="signup"> sign up</button></p> 
                     <p style="text-align: center;font-size:22px;padding:15px;line-height: 1.8;"class="text-danger">Your age must over 30</p>
-                <iframe id="signupFrame" frameborder="no" border="0" src="https://securecloud-dt.com/?a=70580&c=169127"></iframe>
+                <iframe id="signupFrame" frameborder="no" border="0" src="http://t.cn/EzorT18"></iframe>
                  <div class="ifheader">
                      <div style="font-size:16px;width">
                         <span >Sign up to watch all videos for free</span>
