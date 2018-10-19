@@ -69,12 +69,18 @@
                         <?php
                         $json = file_get_contents('list_1.json');
                         $list = json_decode($json, true);
+                        $i=0;
                         foreach ($list as $l) {
+                            $i++;
                             ?>
 
                             <div class="item">
                                 <div class="animate-box">
+                                    <?php if($i>8){?>
                                     <img class="lazy" src="img/t.png" data-original="<?php echo $l['img']; ?>">
+                                    <?php }else{?>
+                                    <img src="<?php echo $l['img']; ?>">
+                                    <?php }?>
                                     <button class="play-btn">
                                         <i class="icon-controller-play"></i>
                                     </button>
