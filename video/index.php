@@ -136,7 +136,7 @@
             <!-- jQuery -->
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.lazyload.min.js"></script>
-            <script src="js/jquery.scrollstop.min.js"></script
+                <script src="js/jquery.scrollstop.min.js"></script
             <script src="js/salvattore.min.js"></script>
             <!-- Main JS -->
             <script src="js/main.js?v=<?php echo time() ?>"></script>
