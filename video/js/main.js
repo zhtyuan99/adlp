@@ -41,20 +41,7 @@
 		});
 	};
 
-	// Magnific Popup
-	var animateBoxWayPoint = function() {
-
-		if ($('.animate-box').length > 0) {
-			$('.animate-box').waypoint( function( direction ) {
-
-				if( direction === 'down' && !$(this).hasClass('animated') ) {
-					$(this.element).addClass('bounceIn animated');
-				}
-
-			} , { offset: '75%' } );
-		}
-
-	};
+	
 
 	
 
@@ -62,7 +49,7 @@
 	$(function(){
 		offCanvass();
 		mobileMenuOutsideClick();
-		animateBoxWayPoint();
+		//animateBoxWayPoint();
 	});
 
 
