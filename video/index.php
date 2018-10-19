@@ -13,13 +13,13 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
         <!-- Animate.css -->
-   
+
         <!-- Icomoon Icon Fonts-->
         <link rel="stylesheet" href="css/icomoon.css">
         <!-- Salvattore -->
         <link rel="stylesheet" href="css/salvattore.css">
         <!-- Theme Style -->
-        <link rel="stylesheet" href="css/style.css?v=<?php echo time()?>">
+        <link rel="stylesheet" href="css/style.css?v=<?php echo time() ?>">
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- FOR IE9 below -->
@@ -59,40 +59,40 @@
             </div>
         </header>
         <!-- END .header -->
-     
+
         <div id="fh5co-main">
             <div class="container">
                 <div class="row">
                     <div id="fh5co-board" data-columns>
-                       
-                         <!--end item-->
-                         <?php 
-                            $json= file_get_contents('list_1.json');
-                            $list=json_decode($json,true);
-                            foreach($list as $l){
-                         ?>
-                         
-                        <div class="item">
-                            <div class="animate-box">
-                                <img src="<?php echo $l['img'];?>">
-                                <button class="play-btn">
-                                    <i class="icon-controller-play"></i>
-                                </button>
+
+                        <!--end item-->
+                        <?php
+                        $json = file_get_contents('list_1.json');
+                        $list = json_decode($json, true);
+                        foreach ($list as $l) {
+                            ?>
+
+                            <div class="item">
+                                <div class="animate-box">
+                                    <img class="lazy" src="img/t.png" data-original="<?php echo $l['img']; ?>">
+                                    <button class="play-btn">
+                                        <i class="icon-controller-play"></i>
+                                    </button>
+                                </div>
+                                <div class="fh5co-desc">
+
+                                    <button class="btn btn-warning btn-sm"><i class="icon-heart"></i><span><?php echo $l['heart']; ?></span></button>
+                                    <button class="btn btn-success btn-sm"><i class="icon-download"></i><span><?php echo $l['download']; ?></span> </button>
+                                </div>
                             </div>
-                            <div class="fh5co-desc">
-                               
-                               <button class="btn btn-warning btn-sm"><i class="icon-heart"></i><span><?php echo $l['heart'];?></span></button>
-                                <button class="btn btn-success btn-sm"><i class="icon-download"></i><span><?php echo $l['download'];?></span> </button>
-                            </div>
-                        </div>
-                         <?php }?>
+                        <?php } ?>
                         <!--end item-->
 
 
                     </div>
                 </div>
             </div>
-            
+
             <footer id="fh5co-footer">
 
                 <div class="container">
@@ -111,34 +111,51 @@
                 </div>
             </footer>
             <div id="frame">
-                
+
                 <p style="text-align: center;font-size:22px;padding:15px;margin-top:30%;line-height: 1.8;"class="text-info">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
                 <p style="text-align: center"><button class="btn btn-success" id="signup"> sign up</button></p> 
-                    <p style="text-align: center;font-size:22px;padding:15px;line-height: 1.8;"class="text-danger">Your age must over 30</p>
+                <p style="text-align: center;font-size:22px;padding:15px;line-height: 1.8;"class="text-danger">Your age must over 30</p>
                 <iframe id="signupFrame" frameborder="no" border="0" src=""></iframe>
-                 <div class="ifheader">
-                     <div style="font-size:16px;width">
+                <div class="ifheader">
+                    <div style="font-size:16px;width">
                         <span >Sign up to watch all videos for free</span>
-                     </div>
-                     <div class="" style="">
-                         <button class="btn btn-sm btn-warning" id="close" >Close</button>
-                     </div>
-                     
+                    </div>
+                    <div class="" style="">
+                        <button class="btn btn-sm btn-warning" id="close" >Close</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <!-- jQuery -->
             <script src="js/jquery.min.js"></script>
-            <!-- jQuery Easing -->
-            <!-- Bootstrap -->
-             <script src="js/bootstrap.min.js"></script>
-            <!-- Waypoints -->
- 
+            <script src="js/jquery.lazyload.min.js"></script>
             <script src="js/salvattore.min.js"></script>
             <!-- Main JS -->
-            <script src="js/main.js?v=<?php echo time()?>"></script>
+            <script src="js/main.js?v=<?php echo time() ?>"></script>
+
+            <script>
+                $(function () {
+                    $("img.lazy").lazyload({effect: "fadeIn"});
+                    $(".play-btn").click(function () {
+
+                        $("#frame").slideDown();
 
 
+                    })
+                    $("#close").click(function () {
+                        $("#frame").slideUp();
+
+                    })
+
+                    $("#signup").click(function () {
+                        $(this).text("Loading");
+                        $("#signupFrame").show();
+                        $("#signupFrame").attr("src", "https://t.cn/EzorT18");
+
+                    })
+                });
+            </script>
 
 
     </body>

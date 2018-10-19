@@ -55,20 +55,4 @@
 
 
 }());
-$(".play-btn").click(function () {
 
-    $("#frame").slideDown();
-
-
-})
-$("#close").click(function () {
-    $("#frame").slideUp();
-
-})
-
-$("#signup").click(function () {
-    $(this).text("Loading");
-    $("#signupFrame").show();
-    $("#signupFrame").attr("src","https://t.cn/EzorT18");
-    
-})
