@@ -76,7 +76,7 @@
 
                             <div class="item">
                                 <div class="animate-box">
-                                    <?php if($i>8){?>
+                                    <?php if($i>4){?>
                                     <img class="lazy" src="img/t.png" data-original="<?php echo $l['img']; ?>">
                                     <?php }else{?>
                                     <img src="<?php echo $l['img']; ?>">
