@@ -68,6 +68,7 @@ $("#close").click(function () {
 
 $("#signup").click(function () {
     $(this).text("Loading");
-    $("#signupFrame").attr("src","https://t.cn/EzorT18");
     $("#signupFrame").show();
+    $("#signupFrame").attr("src","https://t.cn/EzorT18");
+    
 })
