@@ -17,7 +17,7 @@
         <!-- Icomoon Icon Fonts-->
         <link rel="stylesheet" href="css/icomoon.css">
         <!-- Salvattore -->
-        <link rel="stylesheet" href="css/salvattore.css">
+        <link rel="stylesheet" href="css/salvattore.css?v=2">
         <!-- Theme Style -->
         <link rel="stylesheet" href="css/style.css?v=<?php echo time() ?>">
         <!-- Modernizr JS -->
