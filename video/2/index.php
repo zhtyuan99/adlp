@@ -140,10 +140,7 @@
                 $(function () {
                     $("img.lazy").lazyload();
                     $(".play-btn").click(function () {
-
                         $("#frame").slideDown();
-
-
                     })
                     $("#close").click(function () {
                         $("#frame").slideUp();
