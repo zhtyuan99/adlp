@@ -33,7 +33,7 @@ $(function () {
         getList(cat);
     })
     function getList(i) {
-        $(".grid").html("");
+       $(".item").remove();
         $.ajax({
             dataType: "json",
             type: 'get',
@@ -56,7 +56,7 @@ $(function () {
                     $grid.imagesLoaded().done(function () {
                         $grid.masonry('layout');
                     });
-                    var $griDiv=$('<div class="grid-item item"><div class="item-inner"><div class="inner-img"><img src="'+value.img+'" class="item-img"> <button class="play-btn"><i class="icon iconfont icon-play"></i></button></div><section class="section-p"> <p class="title-p">'+value.title+'</p> <p class="name-p"><button class="btn btn-primary btn-heart"><i class="icon iconfont icon-heart"></i>'+value.heart+'</button><button class="btn btn-success btn-download"><i class="icon iconfont icon-icondesign-"></i>'+value.download+'</button></p></section></div></div>');
+                    var $griDiv=$('<div class="grid-item item"><div class="item-inner"><div class="inner-img"><img src="'+value.img+'" class="item-img"> <button class="play-btn"><i class="icon iconfont icon-play"></i></button> <i class="icon iconfont icon-hd hd-icon"></i><div class="mask">'+value.title+' </div></div><section class="section-p"> <p class="name-p"><button class="btn btn-primary btn-heart"><i class="icon iconfont icon-heart"></i>'+value.heart+'</button><button class="btn btn-success btn-download"><i class="icon iconfont icon-icondesign-"></i>'+value.download+'</button></p></section></div></div>');
                     var $items = $griDiv;
                     $items.imagesLoaded().done(function () {
                         $grid.masonry('layout');
