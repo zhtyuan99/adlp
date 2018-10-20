@@ -27,8 +27,13 @@ $(function () {
            // getList(1);
         }
     });
-    getList(1);
+    //getList(1);
+    $(".swiper-slide a").click(function(){
+        var cat=$(this).data("cat");
+        getList(cat);
+    })
     function getList(i) {
+        $(".grid").html("");
         $.ajax({
             dataType: "json",
             type: 'get',

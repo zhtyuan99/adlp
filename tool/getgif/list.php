@@ -10,7 +10,7 @@ $hj = QueryList::Query(
 		"img"=>array('.image','data-src'),
 		"download"=>array('.actions .btn-default','text'),
 		"heart"=>array('.actions .btn-primary','text'),
-                "title"=>array('.title','text')
+                "title"=>array('.image_wrapper','title')
             
 	)
 );
