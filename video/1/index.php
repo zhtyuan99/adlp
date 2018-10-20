@@ -41,12 +41,11 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
             </a>
         </div>
         <div id="frame">
-            <p style="text-align: center;font-size:20px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
+            <p style="text-align: center;font-size:18px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
             <p style="text-align: center"><a class="btn btn-success" id="signup" href="http://www.baidu.com" target="signupFrame"> sign up</a></p> 
-            <p style="text-align: center;font-size:22px;padding:15px;line-height: 1.8;"class="text-danger"></p>
             <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src=""></iframe>
             <div class="ifheader">
-                <div style="font-size:20px;">
+                <div style="font-size:18px;">
                     <span >Sign up to watch all videos for free</span>
                 </div>
                 <div class="" style="margin-top:10px;">
