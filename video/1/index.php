@@ -37,6 +37,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
 
             </aside>
             <a href="javascript:;" class="more-a">
+                <p><img src="img/loader.gif"></p>
                 <button class="btn btn-warning"> More </button>
             </a>
         </div>
