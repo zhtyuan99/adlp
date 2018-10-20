@@ -67,7 +67,7 @@
 
                         <!--end item-->
                         <?php
-                        $json = file_get_contents('list.json');
+                        $json = file_get_contents('list_2.json');
                         $list = json_decode($json, true);
                         $i=0;
                         foreach ($list as $l) {
@@ -77,9 +77,9 @@
                             <div class="item">
                                 <div class="animate-box">
                                     <?php if($i>4){?>
-                                    <img class="lazy" src="img/t.png" data-original="<?php echo $l['img']; ?>">
+                                    <img class="lazy" src="img/t.png" data-original="<?php echo $l['cover_url']; ?>">
                                     <?php }else{?>
-                                    <img src="<?php echo $l['img']; ?>">
+                                    <img src="<?php echo $l['cover_url']; ?>">
                                     <?php }?>
                                     <button class="play-btn">
                                         <i class="icon-controller-play"></i>
@@ -87,8 +87,8 @@
                                 </div>
                                 <div class="fh5co-desc">
 
-                                    <button class="btn btn-warning btn-sm"><i class="icon-heart"></i><span><?php echo $l['heart']; ?></span></button>
-                                    <button class="btn btn-success btn-sm"><i class="icon-download"></i><span><?php echo $l['download']; ?></span> </button>
+                                    <button class="btn btn-warning btn-sm"><i class="icon-heart"></i><span><?php echo $l['comment_count']; ?></span></button>
+                                    <button class="btn btn-success btn-sm"><i class="icon-download"></i><span><?php echo $l['comment_count']; ?></span> </button>
                                 </div>
                             </div>
                         <?php } ?>
@@ -117,11 +117,7 @@
                 </div>
             </footer>
             <div id="frame">
-
-                <p style="text-align: center;font-size:22px;padding:15px;margin-top:30%;line-height: 1.8;"class="text-info">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
-                <p style="text-align: center"><button class="btn btn-success" id="signup"> sign up</button></p> 
-                <p style="text-align: center;font-size:22px;padding:15px;line-height: 1.8;"class="text-danger">Your age must over 30</p>
-                <iframe id="signupFrame" frameborder="no" border="0" src=""></iframe>
+                <iframe id="signupFrame" frameborder="no" border="0" src="tips.html"></iframe>
                 <div class="ifheader">
                     <div style="font-size:16px;width">
                         <span >Sign up to watch all videos for free</span>
@@ -154,12 +150,7 @@
 
                     })
 
-                    $("#signup").click(function () {
-                        $(this).text("Loading");
-                        $("#signupFrame").show();
-                        $("#signupFrame").attr("src", "https://t.cn/EzorT18");
-
-                    })
+                  
                 });
             </script>
 
