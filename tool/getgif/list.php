@@ -9,7 +9,9 @@ $hj = QueryList::Query(
 	array(
 		"img"=>array('.image','data-src'),
 		"download"=>array('.actions .btn-default','text'),
-		"heart"=>array('.actions .btn-primary','text')
+		"heart"=>array('.actions .btn-primary','text'),
+                "title"=>array('.title','text')
+            
 	)
 );
 
