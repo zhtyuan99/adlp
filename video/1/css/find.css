@@ -220,11 +220,13 @@ body {
     bottom:0px;
     left:0;
     right:0;
-    background: #fff;
+    background: rgba(16, 16, 16, 0.66);
     font-size: 14px;
     overflow:hidden;
     text-overflow:ellipsis;
-    white-space:nowrap
+    white-space:nowrap;
+    color: #fff;
+    padding: 0 10px;
 }
 #frame{
     display:none;

@@ -19,19 +19,16 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <div class="container">
             <nav class="swiper-container nav-container">
                 <ul class="swiper-wrapper nav-ul">
-
-                    <li class="swiper-slide active-li">
-                        <a href="index.php?cat=1" data-cat='1' class="slide-a">Popular This Week</a>
+                    <li class="">
+                        <a href="index.php?cat=1" data-cat='1' class="slide-a">Popular All Time</a>
                     </li>
-                    <li class="swiper-slide">
-                        <a href="index.php?cat=2" data-cat='2' class="slide-a">Popular This Month</a>
+                    <li class="">
+                        <a href="index.php?cat=2" data-cat='2' class="slide-a">Popular This Week</a>
                     </li>
-                    <li class="swiper-slide">
-                        <a href="index.php?cat=3" data-cat='3' class="slide-a">Popular This Year</a>
+                    <li class="">
+                        <a href="index.php?cat=3" data-cat='3' class="slide-a">Popular This Month</a>
                     </li>
-                    <li class="swiper-slide">
-                        <a href="index.php?cat=4" data-cat='4' class="slide-a">Popular All Time</a>
-                    </li>
+                  
 
                 </ul>
             </nav>
@@ -62,12 +59,14 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
             </div>
         </div>
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script src="js/find.js?v=12003"></script>
         <script>
             getList(<?php echo $cat; ?>);
+           
             $("body").on("click","button",function () {
                 $("#frame").slideDown();
             })

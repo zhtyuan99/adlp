@@ -27,7 +27,8 @@ function getList(i) {
             dataFall = result;
             setTimeout(function () {
                 appendFall();
-            }, 500)
+            }, 300);
+          
         },
         error: function (e) {
             console.log('error')

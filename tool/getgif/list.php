@@ -5,7 +5,7 @@ require 'lib/QueryList.php';
 use QL\QueryList;
 
 $hj = QueryList::Query(
-	'https://www.sex.com/gifs/',
+	'https://www.sex.com/gifs/?sort=popular&sub=year',
 	array(
 		"img"=>array('.image','data-src'),
 		"download"=>array('.actions .btn-default','text'),
