@@ -27,7 +27,7 @@ $(function () {
            // getList(1);
         }
     });
-    //getList(1);
+    getList(1);
     function getList(i) {
         $.ajax({
             dataType: "json",
