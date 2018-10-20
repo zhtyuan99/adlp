@@ -12,7 +12,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
-        <link href="css/find.css?v=12233" type="text/css" rel="stylesheet" />
+        <link href="css/find.css?v=<?php echo time()?>" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
@@ -61,7 +61,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/find.js?v=12003"></script>
+        <script src="js/find.js?v=<?php echo time()?>"></script>
         <script>
             getList(<?php echo $cat; ?>);
            
