@@ -206,3 +206,22 @@ body {
     color:#fff;
     padding:5px 10px;
 }
+.icon-hd{
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size:24px;
+    color:#c1cece;
+}
+.mask{
+    height:40px;
+    line-height: 40px;
+    width:100%;
+    position: absolute;
+    bottom:0px;
+    left:0;
+    right:0;
+    background: #fff;
+    font-size: 18px;
+    text-align: center
+}
