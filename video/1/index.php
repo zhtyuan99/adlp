@@ -1,13 +1,13 @@
 <?php
 session_start();
-$t=isset($_SESSION['_t'])?$_SESSION['_t']:"";
-$clickid=isset($_SESSION['clickid'])?$_SESSION['clickid']:"";
+$clickid = isset($_SESSION['clickid']) ? $_SESSION['clickid'] : "";
 $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
-if(empty($clickid)){
-    echo "not login";
+if (empty($clickid)) {
+    header('Location: https://secureconv-smart.com/?a=70580&c=130746');
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +19,7 @@ if(empty($clickid)){
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
-        <link href="css/find.css?v=<?php echo time()?>" type="text/css" rel="stylesheet" />
+        <link href="css/find.css?v=<?php echo time() ?>" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
@@ -34,7 +34,7 @@ if(empty($clickid)){
                     <li class="">
                         <a href="index.php?cat=3" data-cat='3' class="slide-a">This Month</a>
                     </li>
-                  
+
 
                 </ul>
             </nav>
@@ -68,20 +68,20 @@ if(empty($clickid)){
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/lp.js?v=<?php echo time()?>"></script>
+        <script src="js/lp.js?v=<?php echo time() ?>"></script>
         <script>
             getList(<?php echo $cat; ?>);
-           
-            $("body").on("click","button",function () {
+
+            $("body").on("click", "button", function () {
                 $("#frame").slideDown();
             })
-           $("#close").click(function () {
-                 $("#frame").slideUp();
+            $("#close").click(function () {
+                $("#frame").slideUp();
 
-           })
-           $("#signup").click(function(){
-               $("#signupFrame").show();
-           });
+            })
+            $("#signup").click(function () {
+                $("#signupFrame").show();
+            });
         </script>
     </body>
 </html>
