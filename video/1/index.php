@@ -50,7 +50,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
                     <span >Sign up to watch all videos for free</span>
                 </div>
                 <div class="" style="margin-top:10px;">
-                    <span class="btn btn-sm btn-warning" id="close" >Close</span>
+                    <span class="btn btn-sm btn-default" id="close" >Close</span>
                 </div>
             </div>
             <div class="iffooter">

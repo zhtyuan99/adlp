@@ -43,3 +43,6 @@ function appendFall() {
                 })
             });
 }
+$("#signup").click(function(){
+    $(this).text("Loading...");
+})
