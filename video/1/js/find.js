@@ -15,7 +15,7 @@ function getList(i) {
     $.ajax({
         dataType: "json",
         type: 'get',
-        url: 'list_' + i + '.json',
+        url: 'list' + i + '.json',
         success: function (result) {
             dataFall = result;
             setTimeout(function () {
