@@ -93,7 +93,8 @@ body {
 .nav-ul li {
     height: 2.5rem;
     width: auto!important;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
+    display: inline-block;
 }
 
 .nav-ul .slide-a {

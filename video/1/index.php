@@ -7,10 +7,9 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <meta charset="UTF-8">
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-        <title>发现</title>
+        <title>FREE HD PRON VIDEOS</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
         <link href="css/find.css?v=12233" type="text/css" rel="stylesheet" />
@@ -62,7 +61,6 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/swiper.min.js"></script>
         <script src="js/find.js?v=12003"></script>
         <script>
             getList(<?php echo $cat; ?>);

@@ -1,11 +1,4 @@
 
-var swiper = new Swiper('.nav-container', {
-    slidesPerView: 'auto',
-    paginationClickable: true
-});
-$(".nav-ul .swiper-slide").click(function () {
-    $(this).addClass("active-li").siblings().removeClass("active-li");
-});
 var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     gutter: 0,
