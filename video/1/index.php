@@ -19,13 +19,13 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
             <nav class="swiper-container nav-container">
                 <ul class="swiper-wrapper nav-ul">
                     <li class="">
-                        <a href="index.php?cat=1" data-cat='1' class="slide-a">Popular All Time</a>
+                        <a href="index.php?cat=1" data-cat='1' class="slide-a">All Time</a>
                     </li>
                     <li class="">
-                        <a href="index.php?cat=2" data-cat='2' class="slide-a">Popular This Week</a>
+                        <a href="index.php?cat=2" data-cat='2' class="slide-a">This Week</a>
                     </li>
                     <li class="">
-                        <a href="index.php?cat=3" data-cat='3' class="slide-a">Popular This Month</a>
+                        <a href="index.php?cat=3" data-cat='3' class="slide-a">This Month</a>
                     </li>
                   
 
