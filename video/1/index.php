@@ -1,5 +1,12 @@
 <?php
+session_start();
+$t=isset($_SESSION['_t'])?$_SESSION['_t']:"";
+$clickid=isset($_SESSION['clickid'])?$_SESSION['clickid']:"";
 $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
+if(empty($clickid)){
+    echo "not login";
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +50,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         </div>
         <div id="frame">
             <p style="text-align: center;font-size:18px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
-            <p style="text-align: center"><a class="btn btn-success" id="signup" href="http://www.baidu.com" target="signupFrame"> sign up</a></p> 
+            <p style="text-align: center"><a class="btn btn-success" id="signup" href="http://c7.gg/aWv47" target="signupFrame"> sign up</a></p> 
             <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src=""></iframe>
             <div class="ifheader">
                 <div style="font-size:18px;">
@@ -61,7 +68,7 @@ $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/find.js?v=<?php echo time()?>"></script>
+        <script src="js/lp.js?v=<?php echo time()?>"></script>
         <script>
             getList(<?php echo $cat; ?>);
            
