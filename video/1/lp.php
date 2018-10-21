@@ -1,5 +1,6 @@
 <?php
 session_start();
+$v=isset($_GET['v']) ? $_GET['v'] : "";
 $clickid = isset($_SESSION['clickid']) ? $_SESSION['clickid'] : "";
 $cat = isset($_GET['cat']) ? $_GET['cat'] : "1";
 if (empty($clickid)) {
@@ -33,6 +34,7 @@ if (empty($clickid)) {
                 };
 
             }());
+            <?php if(!empty($v)){?>
             if (window.location.hash != "#t") {
                 pushHistory();
             }
@@ -44,7 +46,7 @@ if (empty($clickid)) {
                 var state = {title: "title", url: "#t"};
                 window.history.pushState(state, "title", "#t");
             }
-            
+            <?php }?>
             
         </script>
         <style>
@@ -79,13 +81,13 @@ if (empty($clickid)) {
             <nav class="swiper-container nav-container">
                 <ul class="swiper-wrapper nav-ul">
                     <li class="">
-                        <a href="lp.php?cat=1" data-cat='1' target="_blank"class="slide-a">All Time</a>
+                        <a href="lp.php?cat=1" data-cat='1' class="slide-a">All Time</a>
                     </li>
                     <li class="">
-                        <a href="lp.php?cat=2" data-cat='2' target="_blank" class="slide-a">This Week</a>
+                        <a href="lp.php?cat=2" data-cat='2' class="slide-a">This Week</a>
                     </li>
                     <li class="">
-                        <a href="lp.php?cat=3" data-cat='3' target="_blank" class="slide-a">This Month</a>
+                        <a href="lp.php?cat=3" data-cat='3' class="slide-a">This Month</a>
                     </li>
 
 
@@ -139,7 +141,7 @@ if (empty($clickid)) {
                 $("#signupFrame").show();
                  afilter(3); //点注册
             });   
-            AtClickCheck(["button","a"], 3, 1);
+            AtClickCheck(["button","a",'i'], 3, 1);
         </script>
     </body>
 </html>
