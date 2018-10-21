@@ -96,40 +96,7 @@ if (empty($clickid)) {
             
             
             <aside class="fall-box grid">
-                <div class="grid-item item">
-                    <div class="item-inner">
-                        <div class="inner-img">
-                            <img src="https://images.sex.com/images/pinporn/2018/09/23/300/19995330.gif" class="item-img"> 
-                            <button class="play-btn open"><i class="icon iconfont icon-play"></i></button> 
-                            <i class="icon iconfont icon-hd hd-icon"></i>
-                            <div class="mask"></div>
-                                
-                        </div>
-                        <section class="section-p"> 
-                            <p class="name-p">
-                                <button class="btn btn-primary btn-heart open"><i class="icon iconfont icon-heart"></i>375</button>
-                                <button class="btn btn-success btn-download open"><i class="icon iconfont icon-icondesign-"></i>120</button>
-                            </p>
-                        </section>
-                    </div>
-                </div>
-                 <div class="grid-item item">
-                    <div class="item-inner">
-                        <div class="inner-img">
-                            <img src="https://images.sex.com/images/pinporn/2018/09/30/300/20027410.gif" class="item-img"> 
-                            <button class="play-btn open"><i class="icon iconfont icon-play"></i></button> 
-                            <i class="icon iconfont icon-hd hd-icon"></i>
-                            <div class="mask"></div>
-                                
-                        </div>
-                        <section class="section-p"> 
-                            <p class="name-p">
-                                <button class="btn btn-primary btn-heart open"><i class="icon iconfont icon-heart"></i>575</button>
-                                <button class="btn btn-success btn-download open"><i class="icon iconfont icon-icondesign-"></i>260</button>
-                            </p>
-                        </section>
-                    </div>
-                </div>
+               
 
 
             </aside>
