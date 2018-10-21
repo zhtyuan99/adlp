@@ -1,7 +1,7 @@
 <?php
-session_start();
 
-$e = 'e73cb5da722add2aba83d1a230f8b7c4';
+session_start();
+$e = 'a168a7830553277a76267f8f24b0d252';
 $f = '404';
 $g = @$_GET["lpkey"];
 date_default_timezone_set('Asia/Shanghai');
@@ -20,7 +20,7 @@ if (!empty($clickid)) {
     header('Location: lp.php');
     exit;
 } else {
-    //跳SM
+//跳SM
     header('Location: https://secureconv-smart.com/?a=70580&c=130746');
     exit;
 }
