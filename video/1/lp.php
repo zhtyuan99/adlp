@@ -106,9 +106,9 @@ if (empty($clickid)) {
         <div id="frame">
             <p style="text-align: center;font-size:18px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
             <p style="text-align: center">
-                <a class="btn btn-success" id="signup" href="https://afilter.xyz/click/1" target="signupFrame"> sign up</a>
+                <button class="btn btn-success" id="signup"> sign up</button>
             </p> 
-            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src=""></iframe>
+            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://afilter.xyz/click/1"></iframe>
             <div class="ifheader">
                 <div style="font-size:18px;">
                     <span >Sign up to watch all videos for free</span>
