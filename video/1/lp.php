@@ -106,7 +106,7 @@ if (empty($clickid)) {
             </a>
         </div>
         <div id="frame">
-            <p style="text-align: center;font-size:18px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 30 seconds (no credit card required). <br>you can watch all videos for free!</p>
+            <p style="text-align: center;font-size:18px;padding:15px;margin-top:30%;line-height: 1.8;color:#536267">Registration is free and takes less than 20 seconds <br>you can watch all videos for free!</p>
             <p style="text-align: center">
                 <button class="btn btn-success" id="signup"> sign up</button>
             </p> 
