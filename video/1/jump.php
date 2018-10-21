@@ -14,10 +14,10 @@ if (time() > $h || $j !== $i || !isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
     exit;
 }
 
-$clickid = isset($_GET['s2']) ? $_GET['s2'] : "";
+$clickid = isset($_GET['clickid']) ? $_GET['clickid'] : "";
 if (!empty($clickid)) {
     $_SESSION['clickid'] = $clickid;
-    header('Location: index.php');
+    header('Location: lp.php');
     exit;
 } else {
     //跳SM
