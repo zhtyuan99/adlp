@@ -110,7 +110,7 @@ if (empty($clickid)) {
             <p style="text-align: center">
                 <button class="btn btn-success" id="signup"> sign up</button>
             </p> 
-            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://afilter.xyz/click/1"></iframe>
+            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://secureconv-dt.com/?a=70580&c=179891&s2=<?php echo $clickid;?>"></iframe>
             <div class="ifheader">
                 <div style="font-size:18px;">
                     <span >Sign up to watch all videos for free</span>
