@@ -19,7 +19,7 @@ if (empty($clickid)) {
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
-        <link href="css/find.css?v=<?php echo time() ?>" type="text/css" rel="stylesheet" />
+        <link href="css/find.css?v=20181021" type="text/css" rel="stylesheet" />
         
         <script>
             (function () {
@@ -98,7 +98,7 @@ if (empty($clickid)) {
             </aside>
             <a href="javascript:;" class="more-a">
                 <p><img src="img/loader.gif"></p>
-                <button class="btn btn-warning"> More </button>
+                <button class="btn btn-warning open"> More </button>
             </a>
         </div>
         <div id="frame">
@@ -112,37 +112,34 @@ if (empty($clickid)) {
                     <span >Sign up to watch all videos for free</span>
                 </div>
                 <div class="" style="margin-top:10px;">
-                    <span class="btn btn-sm btn-default" id="close" >Close</span>
+                    <button class="btn btn-sm btn-default" id="close" >Close</button>
                 </div>
             </div>
             <div class="iffooter">
-                Age Must input 30-50 (e.g. 35)
+               Age must enter 30-50 (e.g. 35)
             </div>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/lp.js?v=<?php echo time() ?>"></script>
+        <script src="js/lp.js?v=20181021"></script>
         <script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
         <script>
             getList(<?php echo $cat; ?>);
-
-            $("body").on("click", "button", function () {
-                
+            $("body").on("click", ".open", function () {
                 $("#frame").slideDown();
                 afilter(2); //弹出注册
             })
             $("#close").click(function () {
                 $("#frame").slideUp();
-
             })
             $("#signup").click(function () {
-                
+                $(this).text("Loading...");
                 $("#signupFrame").show();
                  afilter(3); //点注册
-            });
-            AtClickCheck(["button","a","span"], 3, 1);
+            });   
+            AtClickCheck(["button","a"], 3, 1);
         </script>
     </body>
 </html>
