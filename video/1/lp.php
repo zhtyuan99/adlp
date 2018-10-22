@@ -127,7 +127,7 @@ if (empty($clickid)) {
         <script src="js/jquery.lazyload.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/lp.js?v=20181021"></script>
+        <script src="js/lp.js?v=20181022"></script>
         <script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
         <script>
             getList(<?php echo $cat; ?>);
