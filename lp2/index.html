@@ -27,17 +27,7 @@
 
             }());
             afilter(1)
-            try{
-                top.location.hostname;
-                if (top.location.hostname != window.location.hostname) {
-                    top.location.href =window.location.href;
-                    afilter(4);
-                }
-            }
-            catch(e){
-                top.location.href = window.location.href;
-                afilter(4);
-            }
+            
         </script>
 </head>
 <body style="">
