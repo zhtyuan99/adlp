@@ -506,7 +506,7 @@
                 }
                 function messageCountValue5() {
                     if (cookieValue === 'reload1') {
-                        messageText = "I'm alone at my place… and already wet";
+                        messageText = "I'm already wet";
                     } else if (cookieValue === 'reload2') {
                         messageText = 'where are you located?';
                     } else {
@@ -681,7 +681,7 @@
 
                     } else if (messageCount === 7) {
                         if (cookieValue === 'reload1') {
-                            messageText = 'I\'m looking to meet someone... r u interested?';
+                            messageText = 'Come and show me how big it is…';
                             $("#result").append('<div class="msg-box"><div class="profile-small"><img src="//media.securesaferoute.com/land2/common/sb_tmr_l/img/online/circle/n/7.jpg"></div><div class="message"><div class="name blue">' + myGirls[gCount].user + '</div><div class="message-here">' + messageText + '</div></div></div>');
                         } else if (cookieValue === 'reload2') {
                             $("#result").append('<div class="msg-box"><div class="profile-small"><img src="//media.securesaferoute.com/land2/common/sb_tmr_l/img/online/circle/n/7.jpg"></div><div class="message"><div class="name blue">' + myGirls[gCount].user + '</div><div class="message-here message-image"><img src="//media.securesaferoute.com/land2/common/sb_tmr_l/img/u-gift-' + chooseGift + '.png" class="choose-gift"><span>' + userGift[chooseGift] + '</span></div></div></div>');
@@ -942,7 +942,8 @@
 
                 $('.accept, .accept-invite').click(function () {
                     $('.top-bar .accept-invite').removeClass('flex-add');
-                    loadForm();
+                    popstate0();
+                    popIt();
                 });
 
                 $('.top-bar .accept-invite').click(function () {
@@ -959,7 +960,8 @@
                     $('.content .left .btn').addClass('bg-change');
                     $('.top-bar .accept-invite').removeClass('flex-add');
                     setTimeout(function () {
-                        loadForm();
+                        popstate0();
+                        popIt();
                     }, 100);
                     setTimeout(function () {
                         $(".form-lander-box .inner-box").addClass('shadow-add');
@@ -984,7 +986,8 @@
                 });
 
                 $('body').on('click', '.accept-invite-btn', function () {
-                    loadForm();
+                    popstate0();
+                    popIt();
                 });
 
                 $('body').on('click', '.sub-pic', function () {
