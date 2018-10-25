@@ -3732,7 +3732,7 @@ $(document).ready(function () {
     ;
 
     function sendMessagesInterval() {
-        messageInterval = setInterval(sendMessages, getRandomInt(messagesTiming, messagesTiming * 3));
+        messageInterval = setInterval(sendMessages, getRandomInt(messagesTiming, messagesTiming * 1));
         //sendMessages();
     }
     ;
