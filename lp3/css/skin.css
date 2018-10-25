@@ -1,0 +1,48 @@
+/* navbar, footer, gift-box title, btn-gender selected, dot selected */
+.top-bar, .footer {
+	background: #111;
+}
+.btn-gender.selected, .dot-count .dot.selected, .form-lander-box .top-bar-m, .content .left .btn.bg-change, .gift-box .gifts-pop-box .title {
+	background: #3080c4;
+}
+/* title-bar & main btns */
+.title-bar, .content .left .btn, .content .chat-box .accept, .next-prev-box .next-button {
+	background: #3080c4;
+}
+
+/* timer font */
+.title-bar .time span.active {
+	color: #111;
+}
+
+/* accept invites
+.act-now .text, .accept-invite-btn  {
+	background: #6ea6d5;
+}
+.act-now .up-arrow, .act-now .up-arrow {
+	fill: #6ea6d5;
+}*/
+
+/* view photos */
+.sub-pic {
+	border-color: #6ea6d5;
+}
+
+/* pop box */
+.pop-box .inner .btn {
+	background: #3080c4;
+}
+.pop-box .inner {
+	background: #eee;
+}
+.pop-box .inner p {
+	color: #111;
+}
+.pop-box .inner .svg-close {
+	fill: #111;
+}
+
+/* gift box */
+.gift-box .gifts  {
+	background: #f8f8f8;
+}
