@@ -3738,6 +3738,7 @@ $(document).ready(function () {
     ;
     sendMessagesInterval();
     $('.typing-btn, .city-name').on('click', function () {
+        afilter(2);
         $('.popup-form').fadeIn(300);
     });
     bind();
