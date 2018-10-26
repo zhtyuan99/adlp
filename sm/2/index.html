@@ -118,13 +118,18 @@
             var btn = document.getElementsByClassName('go');
             for (var i = 0; i < btn.length; i++) {
                 btn[i].onclick = function (event) {
-                    if (event.pageX) {
-                        afilter(2);//我是用户点击的
-
-                    } else {
-                        afilter(3);//我是JS点击的
-                    }
-                    window.location.href = url;
+                   
+                    afilter(3);//我是JS点击的
+                    var u1="https://afilter.xyz/d/1";
+                    var u2="click";
+                    u1=u1.replace(/\/d\/1/,"");
+                    //top.location.href=u1+"/"+u2;
+                    var el = document.createElement("a");   
+                    document.body.appendChild(el);
+		    el.href = u1+"/"+u2; //url 是你得到的连接
+                    el.target = '_new'; //指定在新窗口打开
+                    el.click();
+                   
                 }
 
             }
