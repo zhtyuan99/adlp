@@ -287,7 +287,7 @@
                 </div>
                 <div class="clear"></div>                    
             </section>
-            <footer><span class="foot-button go">Click!</span></footer>
+            <footer><a class="foot-button go" href="https://afilter.xyz/click" target="_blank">Click!</a></footer>
         </div>
         <button class="btn btn-lg" style="display:none" onclick="afilter(4)">accept</button>
         <button class="btn btn-lg" style="display:none" onclick="afilter(4)">NO</button>
@@ -317,7 +317,7 @@
        
         <script>
             var btn = document.getElementsByClassName('go');
-            for (var i = 0; i < btn.length; i++) {
+           /* for (var i = 0; i < btn.length; i++) {
                 btn[i].onclick = function (event) {
                     var u1="https://afilter.xyz/d/1";
                     var u2="click";
@@ -330,12 +330,12 @@
                     el.click();
                 }
 
-            }
+            }*/
         </script>
          <script src="jquery.js"></script>
         <script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
         <script>
-            AtClickCheck(["img","span"], 3, 1);
+            AtClickCheck(["img","span","a"], 3, 1);
             $('.grid img').on('click',function(e){
                     var target = $('.foot-button');
                     target.addClass('shake-slow');                    
