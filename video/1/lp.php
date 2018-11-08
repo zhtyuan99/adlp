@@ -27,7 +27,7 @@ if (empty($clickid)) {
                 window.afilter = function (event) {
                     console.log(event);
                     var xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'https://afilter.xyz/p/events', true);
+                    xhr.open('POST', 'https://trk.dapigu.me/p/events', true);
                     xhr.withCredentials = true;
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                     xhr.send("et=" + event);
@@ -55,27 +55,27 @@ if (empty($clickid)) {
     </head>
     <body>
         <div class="xj">
-            <a href="https://afilter.xyz/d/dpbbv10j46kgmiaceh17nr1nq3" >Check Now</a>
-            <a href="https://afilter.xyz/d/jql2rd6fkah461tsfjob59ale9" >Check Now</a>
-            <a href="https://afilter.xyz/d/425gjjtbp6cvajq79pk3kal3li" >Check Now</a>
-            <a href="https://afilter.xyz/d/9ro84m6gppm1q9ff3st4oigjoq" >Check Now</a>
-            <a href="https://afilter.xyz/d/krm59bgvt1bt5nb8cnhjpsph4e" >Check Now</a>
-            <a href="https://afilter.xyz/d/jb7if8rn4s0ifesrilu2b5htbm" >Check Now</a>
-            <a href="https://afilter.xyz/d/41q84t3i2t7qnneucugcoh99v8" >Check Now</a>
-            <a href="https://afilter.xyz/d/3aldiileuo5rjj91anhqd475q5" >Check Now</a>
-            <a href="https://afilter.xyz/d/te9vmbhs4fl9ecmsk90froogdq" >Check Now</a>
-            <a href="https://afilter.xyz/d/ge55olileht4okp8kapvcpi8ml" >Check Now</a>
-            <a href="https://afilter.xyz/d/k3nfo1jvh175o7h5eutnsgcnck" >Check Now</a>
-            <a href="https://afilter.xyz/d/fgimut2rm9l292tjhtg6qraugq" >Check Now</a>
-            <a href="https://afilter.xyz/d/gu12oqequdisicft5t41rm6s9d" >Check Now</a>
-            <a href="https://afilter.xyz/d/1126cqlejh76v4jmri6dk8abq7" >Check Now</a>
-            <a href="https://afilter.xyz/d/ak5tvg023u75hq5a1n7a5rp3m0" >Check Now</a>
-            <a href="https://afilter.xyz/d/8u71d2cc0kt9h9qjgv3qm5jrdm" >Check Now</a>
-            <a href="https://afilter.xyz/d/sctd1cb9t957kv7qul29eljapv" >Check Now</a>
-            <a href="https://afilter.xyz/d/ricm1vcmi1itkgiebirqlgttaa" >Check Now</a>
-            <a href="https://afilter.xyz/d/mfesjfp27e3jg7rh85m0if60a5" >Check Now</a>
-            <a href="https://afilter.xyz/d/avk0aa6afum97vbe0iqhp53h50" >Check Now</a>
-            <a href="https://afilter.xyz/d/3qri8q9nr5or676mrf90hvfc9u" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/dpbbv10j46kgmiaceh17nr1nq3" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/jql2rd6fkah461tsfjob59ale9" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/425gjjtbp6cvajq79pk3kal3li" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/9ro84m6gppm1q9ff3st4oigjoq" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/krm59bgvt1bt5nb8cnhjpsph4e" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/jb7if8rn4s0ifesrilu2b5htbm" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/41q84t3i2t7qnneucugcoh99v8" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/3aldiileuo5rjj91anhqd475q5" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/te9vmbhs4fl9ecmsk90froogdq" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/ge55olileht4okp8kapvcpi8ml" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/k3nfo1jvh175o7h5eutnsgcnck" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/fgimut2rm9l292tjhtg6qraugq" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/gu12oqequdisicft5t41rm6s9d" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/1126cqlejh76v4jmri6dk8abq7" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/ak5tvg023u75hq5a1n7a5rp3m0" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/8u71d2cc0kt9h9qjgv3qm5jrdm" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/sctd1cb9t957kv7qul29eljapv" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/ricm1vcmi1itkgiebirqlgttaa" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/mfesjfp27e3jg7rh85m0if60a5" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/avk0aa6afum97vbe0iqhp53h50" >Check Now</a>
+            <a href="https://trk.dapigu.me/d/3qri8q9nr5or676mrf90hvfc9u" >Check Now</a>
         </div>
         <div class="container">
             <nav class="swiper-container nav-container">
@@ -110,7 +110,7 @@ if (empty($clickid)) {
             <p style="text-align: center">
                 <button class="btn btn-success" id="signup"> sign up</button>
             </p> 
-            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://afilter.xyz/click"></iframe>
+            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://trk.dapigu.me/click"></iframe>
             <div class="ifheader">
                 <div style="font-size:18px;">
                     <span >Sign up to watch all videos for free</span>
@@ -128,7 +128,7 @@ if (empty($clickid)) {
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
         <script src="js/lp.js?v=20181022"></script>
-        <script src="https://afilter.xyz/js/fraudclick.js?v=2"></script>
+        <script src="https://trk.dapigu.me/js/fraudclick.js?v=2"></script>
         <script>
             getList(<?php echo $cat; ?>);
             $("body").on("click", ".open", function () {
