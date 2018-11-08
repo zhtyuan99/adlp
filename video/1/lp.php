@@ -148,9 +148,10 @@ if (empty($clickid)) {
             })
             $("#signup").click(function () {
                 $(this).text("Loading...");
-                $("#signupFrame").show();
-                var url="https://trk.dapigu.m"+"e/click";
-                $("#signupFrame").attr("src",url);
+               // $("#signupFrame").show();
+               // var url="https://trk.dapigu.m"+"e/click";
+               //$("#signupFrame").attr("src",url);
+                window.location.replace("https://" + 'trk.dapigu.m' + 'e/click');
                  //afilter(3); //点注册
             });   
             AtClickCheck(["button","a",'i'], 3, 1);
