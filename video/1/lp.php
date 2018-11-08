@@ -20,7 +20,7 @@ if (empty($clickid)) {
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
-        <link href="css/find.css?v=20181021" type="text/css" rel="stylesheet" />
+        <link href="css/find.css?v=20181031" type="text/css" rel="stylesheet" />
         <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
         <script>
             (function () {
