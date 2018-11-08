@@ -21,25 +21,33 @@ if (empty($clickid)) {
         <link rel="stylesheet" type="text/css" href="css/iconfont.css">
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
         <link href="css/find.css?v=20181021" type="text/css" rel="stylesheet" />
-        
+        <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI'></script>
         <script>
             (function () {
-                window.afilter = function (event) {
-                    console.log(event);
+                window.afilter = function (event, detail, token) {
                     var xhr = new XMLHttpRequest();
                     xhr.open('POST', 'https://trk.dapigu.me/p/events', true);
                     xhr.withCredentials = true;
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-                    xhr.send("et=" + event);
+                    xhr.send("et=" + event + "&v=" + detail + "&t=" + token);
                 };
 
+                window.atgo = function (url) {
+                    window.location.replace("https://" + 'trk.dapigu.m' + 'e/' + url);
+                };
             }());
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfOt3cUAAAAAMCmwEO6NoLzIGrsk1XvNRJQwooI', {action: 'afilter'})
+                        .then(function (token) {
+                            afilter(6, null, token);
+                        });
+            });
             <?php if(!empty($v)){?>
             if (window.location.hash != "#t") {
                 pushHistory();
             }
             window.addEventListener("popstate", function (e) {
-                afilter(5);
+               afilter(5, null, null);
                 window.location.href = "https://secureconv-smart.com/?a=70580&c=130746&s2=<?php echo $clickid;?>";
             }, false);
             function pushHistory() {
@@ -110,7 +118,7 @@ if (empty($clickid)) {
             <p style="text-align: center">
                 <button class="btn btn-success" id="signup"> sign up</button>
             </p> 
-            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src="https://trk.dapigu.me/click"></iframe>
+            <iframe id="signupFrame" frameborder="no" border="0" name="signupFrame" src=""></iframe>
             <div class="ifheader">
                 <div style="font-size:18px;">
                     <span >Sign up to watch all videos for free</span>
@@ -120,7 +128,7 @@ if (empty($clickid)) {
                 </div>
             </div>
             <div class="iffooter">
-               Age must enter 30-50 (e.g. 35)
+               Age must over 18
             </div>
         </div>
         <script src="js/jquery.min.js"></script>
@@ -133,7 +141,7 @@ if (empty($clickid)) {
             getList(<?php echo $cat; ?>);
             $("body").on("click", ".open", function () {
                 $("#frame").slideDown();
-                afilter(2); //弹出注册
+                //afilter(2); //弹出注册
             })
             $("#close").click(function () {
                 $("#frame").slideUp();
@@ -141,7 +149,9 @@ if (empty($clickid)) {
             $("#signup").click(function () {
                 $(this).text("Loading...");
                 $("#signupFrame").show();
-                 afilter(3); //点注册
+                var url="https://trk.dapigu.m"+"e/click";
+                $("#signupFrame").attr("src",url);
+                 //afilter(3); //点注册
             });   
             AtClickCheck(["button","a",'i'], 3, 1);
         </script>
