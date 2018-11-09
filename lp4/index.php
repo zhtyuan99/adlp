@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<base href="https://assets.dapigu.me/lp4"/>
+<base href="https://assets.dapigu.me/lp4/"/>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <script type="text/javascript" src="error.1c4710d4434f595f8a835f40daa776b8.js"></script>
